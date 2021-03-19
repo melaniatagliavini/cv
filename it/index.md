@@ -3,10 +3,12 @@ lang: it
 title: Fabrizio Giovinazzi
 layout: magnolia
 toc: true
-static_pdf: true
+# static_pdf: true
 ---
 
-## Informazioni personali
+{% contentfor info %}
+
+<!-- ## Informazioni personali -->
 
 {:surtitle="Indirizzo"}
 Via Appia Nuova 566, Roma
@@ -22,6 +24,8 @@ Via Appia Nuova 566, Roma
 
 {:surtitle="Nazionalità"}
 Italiana
+
+{% endcontentfor %}
 
 ## Esperienza Professionale
 
@@ -223,11 +227,9 @@ Scout e in seguito Aiuto Capo presso il gruppo scout “AGESCI SORA 1” di Sora
 
 ## Lingue
 
-Italiano – lingua madre
-
-Inglese – B2/C1
-
-Francese – A1
+- Italiano – lingua madre
+- Inglese – B2/C1
+- Francese – A1
 
 ## Competenze comunicative
 

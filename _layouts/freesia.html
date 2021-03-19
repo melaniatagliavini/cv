@@ -11,34 +11,39 @@
 </head>
 
 <body>
-    <header id="toolbar">
-        <div class="btn-group">
-            <div>
-                {% for lang in site.magnolia.languages %}
+    <header id="topbar">
+        <div class="photo-frame">
+            <div class="btn-group">
+                {% for lang in site.cv.languages %}
                 <button class="icon-btn flag-{{lang}}"
                     onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
                 {% endfor %}
             </div>
 
-            {% if page.static_pdf %}
-            <a class="icon-btn pdf-icon" href="./{{page.pdf_name}}.pdf" download></a>
-            {% else %}
-            <button class="icon-btn pdf-icon" onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
-            {% endif %}
+            <!-- <img class="photo" src="../assets/img/photo.jpg" alt="photo" width="25%"> -->
+            <h1>{{page.title}}</h1>
+
+            <div class="btn-group">
+                {% if page.static_pdf %}
+                <a class="icon-btn pdf-icon" href="./{{page.pdf_name}}.pdf" download></a>
+                {% else %}
+                <button class="icon-btn pdf-icon"
+                    onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
+                {% endif %}
+            </div>
+        </div>
+        <div class="info">
+            {% contentblock info %}
         </div>
     </header>
 
     <main id="markdown-content">
-        <div class="photo-frame">
-            <img class="photo" src="../assets/img/photo.jpg" alt="photo" width="25%">
-            <h1>{{page.title}}</h1>
-        </div>
         {{ content }}
     </main>
 
-    <nav id="table-of-contents">
+    <!-- <nav id="table-of-contents">
         <div class="btn-group">
-            {% for lang in site.magnolia.languages %}
+            {% for lang in site.cv.languages %}
             <button class="icon-btn flag-{{lang}}"
                 onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
             {% endfor %}
@@ -50,7 +55,7 @@
             {% endif %}
         </div>
         {{ content | toc_only }}
-    </nav>
+    </nav> -->
 </body>
 
 </html>

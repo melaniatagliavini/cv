@@ -1,6 +1,7 @@
 plugins:
   - jekyll-toc
   - jekyll-last-modified-at
+  - jekyll-contentblocks
 
 toc:
   min_level: 2
@@ -9,6 +10,6 @@ toc:
 last-modified-at:
   date-format: '%d-%m-%y'
 
-magnolia:
+cv:
   accent-color: '#bc412b'
   languages: ['it', 'en']

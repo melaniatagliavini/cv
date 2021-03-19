@@ -3,13 +3,13 @@
 
 @import 'main';
 
-$accent-color: {{site.magnolia.accent-color | default: '#000'}};
-$background-color: {{site.magnolia.background-color | default: '#fff'}};
-$text-color: {{site.magnolia.text-color | default: '#000'}};
-$subtitle-color: {{site.magnolia.subtitle-color | default: '$text-color'}};
-$surtitle-color: {{site.magnolia.surtitle-color | default: '$accent-color'}};
-$updated-color: {{site.magnolia.surtitle-color | default: '$accent-color'}};
-$consent-color: {{site.magnolia.surtitle-color | default: '$accent-color'}};
+$accent-color: {{site.cv.accent-color | default: '#000'}};
+$background-color: {{site.cv.background-color | default: '#fff'}};
+$text-color: {{site.cv.text-color | default: '#000'}};
+$subtitle-color: {{site.cv.subtitle-color | default: '$text-color'}};
+$surtitle-color: {{site.cv.surtitle-color | default: '$accent-color'}};
+$updated-color: {{site.cv.surtitle-color | default: '$accent-color'}};
+$consent-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 
 html {
   scroll-behavior: smooth;
@@ -92,7 +92,7 @@ body {
   position: sticky;
   z-index: 1;
 
-  {% if site.magnolia.full-topbar == true %}
+  {% if site.cv.full-topbar == true %}
   background-color: $accent-color;
   {% else %}
   background-color: #fff;

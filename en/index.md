@@ -1,9 +1,9 @@
 ---
 lang: en
 title: Fabrizio Giovinazzi
-layout: magnolia
+layout: freesia
 toc: true
-static_pdf: true
+# static_pdf: true
 ---
 
 ## Personal information

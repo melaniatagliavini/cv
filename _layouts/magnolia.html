@@ -14,7 +14,7 @@
     <header id="toolbar">
         <div class="btn-group">
             <div>
-                {% for lang in site.magnolia.languages %}
+                {% for lang in site.cv.languages %}
                 <button class="icon-btn flag-{{lang}}"
                     onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
                 {% endfor %}
@@ -38,7 +38,7 @@
 
     <nav id="table-of-contents">
         <div class="btn-group">
-            {% for lang in site.magnolia.languages %}
+            {% for lang in site.cv.languages %}
             <button class="icon-btn flag-{{lang}}"
                 onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
             {% endfor %}
