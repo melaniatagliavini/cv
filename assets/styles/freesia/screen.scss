@@ -49,6 +49,18 @@ body {
 //   }
 // }
 
+.mobile {
+  @media screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.desktop{
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
 .photo {
   width: 50%;
   display: block;
@@ -101,9 +113,9 @@ body {
 
   .btn-group {
     flex: 0.25;
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+    // @media screen and (max-width: 768px) {
+    //   display: none;
+    // }
   }
 
   h1 {
@@ -117,30 +129,26 @@ body {
 }
 
 .info {
-  border-bottom: 2px solid $accent-color;
-  text-align: center;
-  padding: 0.5em 1em;
+    &.desktop{
+    border-bottom: 2px solid $accent-color;
+    text-align: center;
+    padding: 0.5em 1em;
 
-  p {
-    display: inline;
+    p {
+      display: inline;
 
-    // @media scREEN AND (MIN-WIDTH: 768PX) {
-    //   POSITION: RELATIVE;
-    //   WIDTH: 65%;
-    //   MARGIN: 0 0 1EM 28%;
-    // }
-
-    &::after {
-      content: '  -  ';
-      color: $accent-color;
-      font-weight: 600;
-    }
-
-    &:first-child {
-      &::before {
+      &::after {
         content: '  -  ';
         color: $accent-color;
         font-weight: 600;
+      }
+
+      &:first-child {
+        &::before {
+          content: '  -  ';
+          color: $accent-color;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -176,32 +184,45 @@ body {
   padding-top: 2em;
 
   h2 {
-    height: 1.5em;
     font-weight: 400;
     font-size: 1.5em;
     color: $accent-color;
-    margin: 1em;
+    margin: 1em 0;
     text-align: center;
     overflow: hidden;
 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+
+
     &:before,
     &:after {
-      background-color: $accent-color;
-      content: '';
-      display: inline-block;
-      height: 1px;
-      position: relative;
-      vertical-align: middle;
-      width: 50%;
+      content: "";
+      display: block;
+      border-top: 2px solid $accent-color;
+      min-width: 10px;
     }
-    &:before {
-      right: 0.5em;
-      margin-left: -50%;
-    }
-    &:after {
-      left: 0.5em;
-      margin-right: -50%;
-    }
+
+    // &:before,
+    // &:after {
+    //   background-color: $accent-color;
+    //   content: '';
+    //   display: inline-block;
+    //   height: 1px;
+    //   position: relative;
+    //   vertical-align: middle;
+    //   width: 50%;
+    // }
+    // &:before {
+    //   right: 0.5em;
+    //   margin-left: -50%;
+    // }
+    // &:after {
+    //   left: 0.5em;
+    //   margin-right: -50%;
+    // }
   }
 
   p {
