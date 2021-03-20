@@ -72,7 +72,11 @@ body {
 .btn-group {
   display: flex;
   flex-flow: row wrap;
+  {% if site.cv.languages and site.cv.languages.size > 1 %}
   justify-content: space-around;
+  {% else %}
+  justify-content: start;
+  {% endif %}
   align-items: center;
   margin: 0.5em 1em 1em;
 
