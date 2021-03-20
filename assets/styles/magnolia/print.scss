@@ -194,7 +194,7 @@ ol {
 li {
   margin-left: 1rem;
 
-  &::marker{
+  &::before{
     content: '- ';
     color: $accent-color;
     font-weight: 600;
@@ -207,7 +207,7 @@ li {
     > li {
       margin-right: 0;
 
-      &::marker{
+      &::before{
         content: '- ';
         color: $accent-color;
         font-weight: 600;

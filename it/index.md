@@ -53,6 +53,8 @@ Progettazione e gestione di database relazionali (Oracle, MySql)
 
 ### Cameriere
 
+{:.page-break}
+
 ## Progetti
 
 {:surtitle="Gennaio 2021 – ad oggi"}
@@ -119,7 +121,7 @@ Principali tecnologie utilizzate:
 - Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
   ^
 
-{:surtitle="Maggio 2019 – Febbraio 2020"}
+{:surtitle="Maggio 2019 – Febbraio 2020" .page-break}
 
 ### Mappe conoscitive fornitori-amministrazioni
 
@@ -193,6 +195,8 @@ Oracle Certified Associate, Java SE 8 Programmer
 
 Scrum Fundamentals Certified
 
+{:.page-break}
+
 ## Titoli di studio
 
 {:surtitle="2008"}
@@ -248,6 +252,8 @@ Ottime competenze organizzative sviluppate come aiuto capo scout con gruppi di p
 Capacità decisionali affinate come arbitro ufficiale di pallacanestro Under-15.
 
 Propensione al lavoro di gruppo e alla risoluzione tempestiva dei problemi affinata durante la pluriennale esperienza di scout e come capo squadriglia (team di 7 ragazzi)
+
+{:.page-break}
 
 ## Competenze digitali
 

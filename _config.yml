@@ -3,6 +3,8 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-contentblocks
 
+baseurl: /cv
+
 toc:
   min_level: 2
   max_level: 5
