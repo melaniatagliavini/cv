@@ -14,19 +14,9 @@
     <header id="toolbar">
         <div class="btn-group">
             <div>
-                {% for lang in site.cv.languages %}
-                <button class="icon-btn flag-{{lang}}"
-                    onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
-                {% endfor %}
+                {% include lang_buttons.html languages=site.cv.languages %}
             </div>
-
-            {% if page.static_pdf %}
-            <a href="./{{page.pdf_name}}.pdf" download>
-                <button class="icon-btn pdf-icon" type="button"></button>
-            </a>
-            {% else %}
-            <button class="icon-btn pdf-icon" onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
-            {% endif %}
+            {% include pdf_button.html page=page %}
         </div>
     </header>
 
@@ -40,18 +30,8 @@
 
     <nav id="table-of-contents">
         <div class="btn-group">
-            {% for lang in site.cv.languages %}
-            <button class="icon-btn flag-{{lang}}"
-                onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
-            {% endfor %}
-
-            {% if page.static_pdf %}
-            <a href="./{{page.pdf_name}}.pdf" download>
-                <button class="icon-btn pdf-icon" type="button"></button>
-            </a>
-            {% else %}
-            <button class="icon-btn pdf-icon" onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
-            {% endif %}
+            {% include lang_buttons.html languages=site.cv.languages %}
+            {% include pdf_button.html page=page %}
         </div>
         {{ content | toc_only }}
     </nav>

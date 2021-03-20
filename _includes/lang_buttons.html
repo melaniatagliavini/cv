@@ -1,0 +1,6 @@
+{% if include.languages and include.languages.size > 1 %}
+{% for lang in include.languages %}
+<button class="icon-btn flag-{{lang}}"
+    onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
+{% endfor %}
+{% endif %}

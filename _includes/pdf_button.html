@@ -1,0 +1,7 @@
+{% if include.page.static_pdf %}
+<a href="./{{include.page.pdf_name}}.pdf" download>
+    <button class="icon-btn pdf-icon" type="button"></button>
+</a>
+{% else %}
+<button class="icon-btn pdf-icon" onclick="document.title = '{{include.page.pdf_name}}'; window.print()"></button>
+{% endif %}
