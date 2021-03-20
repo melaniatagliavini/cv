@@ -17,7 +17,7 @@ Via Appia Nuova 566, Roma, Italy
 {:surtitle="e-mail"}
 <fabrizio.giovinazzi@gmail.com>
 
-{:surtitle="Birth"}
+{:surtitle="Date of Birth"}
 18/04/1989
 
 {:surtitle="Nationality"}
@@ -48,6 +48,8 @@ Relational databases design and mantainence (Oracle, MySql)
 {:surtitle="June – October 2017" subtitle='“Circolo Tennis T5”, Roma'}
 
 ### Waiter
+
+{:.page-break}
 
 ## Projects
 
@@ -115,7 +117,7 @@ Main technologies involved:
 - Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
   ^
 
-{:surtitle="May 2019 – February 2020"}
+{:surtitle="May 2019 – February 2020" .page-break}
 
 ### Mappe conoscitive fornitori-amministrazioni
 

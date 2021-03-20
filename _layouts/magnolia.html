@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../assets/js/scroll-spy.js"></script>
-    <link href="../assets/styles/magnolia/screen.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="../assets/styles/magnolia/print.css" type="text/css" rel="stylesheet" media="print">
+    <script src="{{site.baseurl}}/assets/js/scroll-spy.js"></script>
+    <link href="{{site.baseurl}}/assets/styles/magnolia/screen.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="{{site.baseurl}}/assets/styles/magnolia/print.css" type="text/css" rel="stylesheet" media="print">
     <title>Curriculum Vitae {{page.title}}</title>
 </head>
 
@@ -14,14 +14,16 @@
     <header id="toolbar">
         <div class="btn-group">
             <div>
-                {% for lang in site.magnolia.languages %}
+                {% for lang in site.cv.languages %}
                 <button class="icon-btn flag-{{lang}}"
                     onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
                 {% endfor %}
             </div>
 
             {% if page.static_pdf %}
-            <a class="icon-btn pdf-icon" href="./{{page.pdf_name}}.pdf" download></a>
+            <a href="./{{page.pdf_name}}.pdf" download>
+                <button class="icon-btn pdf-icon" type="button"></button>
+            </a>
             {% else %}
             <button class="icon-btn pdf-icon" onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
             {% endif %}
@@ -30,7 +32,7 @@
 
     <main id="markdown-content">
         <div class="photo-frame">
-            <img class="photo" src="../assets/img/photo.jpg" alt="photo" width="25%">
+            <img class="photo" src="{{site.baseurl}}/assets/img/photo.jpg" alt="photo" width="25%">
             <h1>{{page.title}}</h1>
         </div>
         {{ content }}
@@ -38,13 +40,15 @@
 
     <nav id="table-of-contents">
         <div class="btn-group">
-            {% for lang in site.magnolia.languages %}
+            {% for lang in site.cv.languages %}
             <button class="icon-btn flag-{{lang}}"
                 onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
             {% endfor %}
 
             {% if page.static_pdf %}
-            <a class="icon-btn pdf-icon" href="./{{page.pdf_name}}.pdf" download></a>
+            <a href="./{{page.pdf_name}}.pdf" download>
+                <button class="icon-btn pdf-icon" type="button"></button>
+            </a>
             {% else %}
             <button class="icon-btn pdf-icon" onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
             {% endif %}

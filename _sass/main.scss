@@ -195,3 +195,7 @@ table {
     transition: transform 0.3s linear;
   }
 }
+
+.page-break{
+  page-break-before: always;
+}

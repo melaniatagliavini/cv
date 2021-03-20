@@ -2,6 +2,8 @@ plugins:
   - jekyll-toc
   - jekyll-last-modified-at
 
+baseurl: /cv
+
 toc:
   min_level: 2
   max_level: 5
@@ -9,6 +11,6 @@ toc:
 last-modified-at:
   date-format: '%d-%m-%y'
 
-magnolia:
+cv:
   accent-color: '#bc412b'
   languages: ['it', 'en']
