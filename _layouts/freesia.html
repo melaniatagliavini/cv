@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{site.baseurl}}/assets/styles/freesia/screen.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="{{site.baseurl}}/assets/styles/freesia/print.css" type="text/css" rel="stylesheet" media="print">
+    <title>Curriculum Vitae {{page.title}}</title>
+</head>
+
+<body>
+    <header id="topbar">
+        <div class="button-bar mobile">
+            <div class="btn-group">
+                <div>
+                    {% include lang_buttons.html languages=site.cv.languages %}
+                </div>
+                {% include pdf_button.html page=page %}
+            </div>
+        </div>
+        <!-- <img class="photo" src="{{site.baseurl}}/assets/img/photo.jpg" alt="photo" width="25%"> -->
+        <div class="photo-frame">
+            
+            <div class="btn-group desktop">
+                {% include lang_buttons.html languages=site.cv.languages %}
+            </div>
+
+
+            <h1>{{page.title}}</h1>
+
+            <div class="btn-group desktop">
+                {% include pdf_button.html page=page %}
+            </div>
+        </div>
+        <div class="info desktop">
+            {% contentblock info %}
+        </div>
+    </header>
+
+    <main id="markdown-content">
+        <div class="info mobile">
+            {% contentblock info %}
+        </div>
+        
+        {{ content }}
+    </main>
+
+    <!-- <nav id="table-of-contents">
+        <div class="btn-group">
+            {% for lang in site.cv.languages %}
+            <button class="icon-btn flag-{{lang}}"
+                onclick="window.location.pathname = window.location.pathname.replace('{{page.lang}}', '{{lang}}')"></button>
+            {% endfor %}
+
+            {% if page.static_pdf %}
+            <a class="icon-btn pdf-icon" href="./{{page.pdf_name}}.pdf" download></a>
+            {% else %}
+            <button class="icon-btn pdf-icon" onclick="document.title = '{{page.pdf_name}}'; window.print()"></button>
+            {% endif %}
+        </div>
+        {{ content | toc_only }}
+    </nav> -->
+</body>
+
+</html>

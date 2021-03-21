@@ -11,4 +11,5 @@ gem 'wicked_pdf'
 group :jekyll_plugins do
     gem 'jekyll-toc'
     gem "jekyll-last-modified-at"
+    gem 'jekyll-contentblocks'
   end

@@ -3,13 +3,15 @@
 
 @import 'main';
 
-$accent-color: {{site.cv.accent-color | default: '#000'}};
+$accent-color: {{site.cv.accent-color | default: '#bc412b'}};
 $background-color: {{site.cv.background-color | default: '#fff'}};
 $text-color: {{site.cv.text-color | default: '#000'}};
 $subtitle-color: {{site.cv.subtitle-color | default: '$text-color'}};
 $surtitle-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $updated-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $consent-color: {{site.cv.surtitle-color | default: '$accent-color'}};
+$link-color: {{site.cv.surtitle-color | default: '#39f'}};
+
 
 html {
   scroll-behavior: smooth;
@@ -311,7 +313,7 @@ body {
   }
 
   a:hover {
-    color: #39f;
+    color: $link-color;
   }
 }
 

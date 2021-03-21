@@ -1,6 +1,7 @@
 plugins:
   - jekyll-toc
   - jekyll-last-modified-at
+  - jekyll-contentblocks
 
 baseurl: /cv
 
@@ -12,5 +13,5 @@ last-modified-at:
   date-format: '%d-%m-%y'
 
 cv:
-  accent-color: '#bc412b'
+  # accent-color: '#bc412b'
   languages: ['it', 'en']
