@@ -1,27 +1,18 @@
 ---
 lang: it
 title: Fabrizio Giovinazzi
-layout: magnolia
-toc: true
-static_pdf: true
+layout: freesia
 ---
 
-## Informazioni personali
+{% contentfor info %}
 
-{:surtitle="Indirizzo"}
 Via Appia Nuova 566, Roma
 
-{:surtitle="Telefono"}
 +39 3464066954
 
-{:surtitle="e-mail"}
 <fabrizio.giovinazzi@gmail.com>
 
-{:surtitle="Data di nascita"}
-18/04/1989
-
-{:surtitle="Nazionalità"}
-Italiana
+{% endcontentfor %}
 
 ## Esperienza Professionale
 
@@ -48,8 +39,6 @@ Progettazione e gestione di database relazionali (Oracle, MySql)
 {:surtitle="Giugno – Ottobre 2017" subtitle='“Circolo Tennis T5”, Roma'}
 
 ### Cameriere
-
-{:.page-break}
 
 ## Progetti
 
@@ -117,7 +106,7 @@ Principali tecnologie utilizzate:
 - Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
   ^
 
-{:surtitle="Maggio 2019 – Febbraio 2020" .page-break}
+{:surtitle="Maggio 2019 – Febbraio 2020"}
 
 ### Mappe conoscitive fornitori-amministrazioni
 
@@ -191,8 +180,6 @@ Oracle Certified Associate, Java SE 8 Programmer
 
 Scrum Fundamentals Certified
 
-{:.page-break}
-
 ## Titoli di studio
 
 {:surtitle="2008"}
@@ -227,11 +214,9 @@ Scout e in seguito Aiuto Capo presso il gruppo scout “AGESCI SORA 1” di Sora
 
 ## Lingue
 
-Italiano – lingua madre
-
-Inglese – B2/C1
-
-Francese – A1
+- Italiano – lingua madre
+- Inglese – B2/C1
+- Francese – A1
 
 ## Competenze comunicative
 
@@ -250,8 +235,6 @@ Ottime competenze organizzative sviluppate come aiuto capo scout con gruppi di p
 Capacità decisionali affinate come arbitro ufficiale di pallacanestro Under-15.
 
 Propensione al lavoro di gruppo e alla risoluzione tempestiva dei problemi affinata durante la pluriennale esperienza di scout e come capo squadriglia (team di 7 ragazzi)
-
-{:.page-break}
 
 ## Competenze digitali
 

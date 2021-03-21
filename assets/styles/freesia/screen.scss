@@ -2,14 +2,16 @@
 ---
 
 @import 'main';
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
-$accent-color: {{site.cv.accent-color | default: '#000'}};
+$accent-color: {{site.cv.accent-color | default: '#e8b200'}};
 $background-color: {{site.cv.background-color | default: '#fff'}};
 $text-color: {{site.cv.text-color | default: '#000'}};
 $subtitle-color: {{site.cv.subtitle-color | default: '$text-color'}};
 $surtitle-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $updated-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $consent-color: {{site.cv.surtitle-color | default: '$accent-color'}};
+$link-color: {{site.cv.surtitle-color | default: '#39f'}};
 
 html {
   scroll-behavior: smooth;
@@ -22,9 +24,13 @@ body {
   font-weight: 400;
   font-size: 100%;
   line-height: 1.5em;
-  // font-family: 'Abel', sans-serif;
-  max-width: 100em;
-  margin: 1em 2em;
+  font-family: 'DM Mono', monospace;
+  max-width: 50em;
+  margin: 1em;
+
+  @media screen and (min-width: 768px) {
+    margin: 1em 2em;
+  }
 
   /** colors **/
   color: $text-color;
@@ -99,29 +105,31 @@ body {
 
   .photo-frame {
     display: flex;
-    flex-flow: row wrap;
-    margin-top: 2em;
-    padding: 1em;
+    padding: 0;
+    margin-top: 0.5em;
     // background-color: #fff;
     border-top: 2px solid $accent-color;
     border-bottom: 2px solid $accent-color;
 
-    @media screen and (max-width: 768px) {
-      padding: 1em 0;
+    @media screen and (min-width: 768px) {
+      margin-top: 2em;
+      padding: 1em;
     }
   }
 
   .btn-group {
+    justify-content: space-between;
     flex: 0.25;
-    // @media screen and (max-width: 768px) {
-    //   display: none;
-    // }
+    
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+    }    
   }
 
   h1 {
     flex: 1;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1;
     text-align: center;
     color: $accent-color;
@@ -129,27 +137,36 @@ body {
 }
 
 .info {
-    &.desktop{
+
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8em;
+
+  &.desktop{
     border-bottom: 2px solid $accent-color;
     text-align: center;
     padding: 0.5em 1em;
-
+    
     p {
       display: inline;
 
       &::after {
-        content: '  -  ';
         color: $accent-color;
-        font-weight: 600;
+        font-weight: 500;
+        content:"\00a0\00a0";
+        text-decoration:line-through;
+        margin-left: 0.2em;
+        margin-right: -0.2em;
       }
 
-      &:first-child {
         &::before {
-          content: '  -  ';
           color: $accent-color;
-          font-weight: 600;
+          font-weight: 500;
+          content:"\00a0\00a0";
+          text-decoration:line-through;
+          margin-left: -0.5em;
+          margin-right: 0.5em;
         }
-      }
     }
   }
 }
@@ -162,7 +179,7 @@ body {
     content: attr(surtitle);
     display: block;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     font-style: italic;
     color: $surtitle-color;
@@ -173,7 +190,7 @@ body {
     content: attr(subtitle);
     display: block;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     font-style: italic;
     color: $subtitle-color;
@@ -186,8 +203,8 @@ body {
   h2 {
     font-weight: 400;
     font-size: 1.5em;
+    height: 4em;
     color: $accent-color;
-    margin: 1em 0;
     text-align: center;
     overflow: hidden;
 
@@ -205,24 +222,6 @@ body {
       min-width: 10px;
     }
 
-    // &:before,
-    // &:after {
-    //   background-color: $accent-color;
-    //   content: '';
-    //   display: inline-block;
-    //   height: 1px;
-    //   position: relative;
-    //   vertical-align: middle;
-    //   width: 50%;
-    // }
-    // &:before {
-    //   right: 0.5em;
-    //   margin-left: -50%;
-    // }
-    // &:after {
-    //   left: 0.5em;
-    //   margin-right: -50%;
-    // }
   }
 
   p {
@@ -234,9 +233,9 @@ body {
     &.consent {
       margin-top: 4em;
       font-style: italic;
-      font-weight: 200;
+      font-weight: 300;
       font-size: 16px;
-      font-weight: 200;
+      font-weight: 300;
       color: $consent-color;
     }
 
@@ -245,19 +244,19 @@ body {
       // margin-top: 4em;
       text-align: right;
       font-style: italic;
-      font-weight: 200;
+      font-weight: 300;
       font-size: 16px;
-      font-weight: 200;
+      font-weight: 300;
       color: $updated-color;
     }
 
     /** subtitle (for links) **/
     &.subtitle {
       font-style: italic;
-      font-weight: 200;
+      font-weight: 300;
       margin-top: -1.2em;
       font-size: 16px;
-      font-weight: 200;
+      font-weight: 300;
       color: $subtitle-color;
     }
   }
@@ -266,7 +265,7 @@ body {
   h4 {
     @include line;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   ul, ol {
@@ -279,174 +278,13 @@ body {
   }
 }
 
-// @mixin line {
-//   position: relative;
-//   // margin: 0 0 1em 0;
-//   margin-bottom: 1em;
-
-//   @media screen and (min-width: 768px) {
-//     position: relative;
-//     width: 65%;
-//     margin: 0 0 1em 28%;
-//   }
-
-//   /** surtitle **/
-//   &::before {
-//     content: attr(surtitle);
-//     display: block;
-//     font-size: 14px;
-//     font-weight: 200;
-//     text-align: left;
-//     font-style: italic;
-//     color: $surtitle-color;
-//   }
-
-//   /** subtitle **/
-//   &::after {
-//     content: attr(subtitle);
-//     display: block;
-//     font-size: 16px;
-//     font-weight: 200;
-//     text-align: left;
-//     font-style: italic;
-//     color: $subtitle-color;
-//   }
-// }
-
-// #markdown-content {
-//   font-size: 1.2em;
-
-//   p {
-//     @include line;
-
-//     line-height: 1.2em;
-
-//     /** consent **/
-//     &.consent {
-//       margin-top: 4em;
-//       font-style: italic;
-//       font-weight: 200;
-//       font-size: 16px;
-//       font-weight: 200;
-//       color: $consent-color;
-//     }
-
-//     /** updated **/
-//     &.updated {
-//       // margin-top: 4em;
-//       text-align: right;
-//       font-style: italic;
-//       font-weight: 200;
-//       font-size: 16px;
-//       font-weight: 200;
-//       color: $updated-color;
-//     }
-
-//     /** subtitle (for links) **/
-//     &.subtitle {
-//       font-style: italic;
-//       font-weight: 200;
-//       margin-top: -1.2em;
-//       font-size: 16px;
-//       font-weight: 200;
-//       color: $subtitle-color;
-//     }
-//   }
-
-//   h1 {
-//     font-weight: 400;
-//     font-size: 3em;
-//     line-height: 1;
-//     margin: 1em 0 0 0;
-//     text-align: center;
-
-//     @media screen and (min-width: 768px) {
-//       text-align: right;
-//       margin: 0 1em 0 0;
-//     }
-//   }
-
-//   h2 {
-//     position: relative;
-//     font-weight: 400;
-//     font-size: 1.5em;
-//     color: $accent-color;
-//     margin-top: 2em;
-//     margin-bottom: 1em;
-//     text-align: center;
-
-//     @media screen and (min-width: 768px) {
-//       margin-top: 3em;
-//       margin-bottom: 0em;
-//       text-align: right;
-//       width: 25%;
-//     }
-//   }
-
-//   h3,
-//   h4 {
-//     @include line;
-//     font-size: 1.5em;
-//     font-weight: 400;
-//   }
-
-//   // section {
-//   //   margin: 2em 0 2em 3em;
-
-//   //   &::before {
-//   //     content: attr(id);
-//   //     text-transform: capitalize;
-//   //     display: block;
-//   //     font-weight: 200;
-//   //     text-align: left;
-//   //     margin: 0 0 1em 28%;
-//   //     font-size: 1.5em;
-//   //     color: $accent-color;
-//   //   }
-//   // }
-
-//   ul,
-//   ol {
-//     margin-bottom: 1em;
-
-//     @media screen and (min-width: 768px) {
-//       margin-left: 28%;
-//     }
-//   }
-
-//   li {
-//     margin: 0 2em 0 1em;
-
-//     &::marker {
-//       content: '- ';
-//       color: $accent-color;
-//       font-weight: 600;
-//     }
-
-//     > ul,
-//     > ol {
-//       margin: 0;
-
-//       > li {
-//         margin-right: 0;
-
-//         &::marker {
-//           content: '- ';
-//           color: $accent-color;
-//           font-weight: 600;
-//         }
-//       }
-//     }
-//   }
-// }
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
 a:hover {
-  color: #39f;
+  color: $link-color;
 }
 
 // #table-of-contents {

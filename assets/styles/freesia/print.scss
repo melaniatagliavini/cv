@@ -2,8 +2,9 @@
 ---
 
 @import "main";
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
-$accent-color: {{site.cv.accent-color | default: '#000'}};
+$accent-color: {{site.cv.accent-color | default: '#e8b200'}};
 $background-color: {{site.cv.background-color | default: '#fff'}};
 $text-color: {{site.cv.text-color | default: '#000'}};
 $subtitle-color: {{site.cv.subtitle-color | default: '$text-color'}};
@@ -19,7 +20,7 @@ $consent-color: {{site.cv.surtitle-color | default: '$accent-color'}};
   @bottom-left {
     // counter-increment: page;
     // counter-reset: page 1;
-    content: counter(page) " of " counter(pages);
+    content: counter(page) "/" counter(pages);
   }
 
   // @bottom-right {
@@ -50,9 +51,8 @@ ul {
   page-break-before: avoid;
 }
 
-#table-of-contents,
-#lang-selector,
-#toolbar {
+.mobile,
+.btn-group {
   display: none;
 }
 
@@ -61,8 +61,9 @@ body {
   font-weight: 400;
   font-size: 100%;
   line-height: 1.5em;
-  font-family: "Abel", sans-serif;
-
+  margin: 0;
+  font-family: 'DM Mono', monospace;
+  
   /* colors */
   color: $text-color;
   background-color: $background-color;
@@ -72,26 +73,72 @@ body {
   }
 }
 
-.photo-frame {
-  margin-top: 0;
+#topbar {
+
+  background-color: #fff;
+  padding-bottom: 0.2em;
+  border-bottom: 4px solid $accent-color;
+
+  .photo-frame {
+    display: flex;
+    border-top: 2px solid $accent-color;
+    border-bottom: 2px solid $accent-color;
+    // margin-top: 2em;
+    padding: 1em;
+  }
+
+  h1 {
+    flex: 1;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1;
+    text-align: center;
+    color: $accent-color;
+  }
 }
 
-.photo {
-  width: 25%;
-  margin: 0;
-  display: inline-block;
+.info {
+    border-bottom: 2px solid $accent-color;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8em;
+
+    p {
+      display: inline;
+
+      &::after {
+        color: $accent-color;
+        font-weight: 500;
+        content:"\00a0\00a0";
+        text-decoration:line-through;
+        margin-left: 0.5em;
+        margin-right: -0.5em;
+        font-size: 1.5em;
+      }
+
+        &::before {
+          color: $accent-color;
+          font-weight: 500;
+          content:"\00a0\00a0";
+          text-decoration:line-through;
+          margin-left: -0.5em;
+          margin-right: 0.5em;
+          font-size: 1.5em;
+        }
+    }
 }
 
 @mixin line {
-  position: relative;
-  margin: 0 0 1em 28%;
+  margin: 1em 10%;
 
   /** surtitle **/
   &::before {
     content: attr(surtitle);
     display: block;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     font-style: italic;
     color: $surtitle-color;
@@ -102,116 +149,109 @@ body {
     content: attr(subtitle);
     display: block;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     font-style: italic;
     color: $subtitle-color;
   }
 }
 
-p {
-  @include line;
+#markdown-content {
+  padding-top: 2em;
 
-  line-height: 1.2em;
-
-  /** consent **/
-  &.consent {
-    margin-top: 4em;
-    font-style: italic;
-    font-weight: 200;
-    font-size: 16px;
-    font-weight: 200;
-    color: $consent-color;
-  }
-
-  /** updated **/
-  &.updated {
-    text-align: right;
-    font-style: italic;
-    font-weight: 200;
-    font-size: 16px;
-    font-weight: 200;
-    color: $updated-color;
-  }
-
-  /** subtitle (for links) **/
-  &.subtitle {
-    font-style: italic;
-    font-weight: 200;
-    margin-top: -1.2em;
-    font-size: 16px;
-    font-weight: 200;
-    color: $subtitle-color;
-  }
-}
-
-h1 {
-  font-weight: 400;
-  text-align: right;
-  font-size: 3em;
-  line-height: 1;
-
-  display: inline-block;
-  width: 74%;
-}
-
-h2 {
-  position: relative;
-  font-weight: 400;
-  font-size: 1.5em;
-  color: $accent-color;
-  margin-top: 3em;
-  text-align: right;
-  width: 25%;
-}
-
-h3, h4 {
-  @include line;
-  font-size: 1.5em;
-  font-weight: 400;
-}
-
-section {
-  margin: 2em 0 2em 3em;
-
-  &::before {
-    content: attr(id);
-    text-transform: capitalize;
-    display: block;
-    font-weight: 200;
-    text-align: left;
-    margin: 0 0 1em 28%;
+  h2 {
+    font-weight: 400;
     font-size: 1.5em;
+    height: 4em;
     color: $accent-color;
+    text-align: center;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      border-top: 2px solid $accent-color;
+      min-width: 10px;
+    }
+
+    // &:before,
+    // &:after {
+    //   background-color: $accent-color;
+    //   content: '';
+    //   display: inline-block;
+    //   height: 1px;
+    //   position: relative;
+    //   vertical-align: middle;
+    //   width: 45%;
+    // }
+    // &:before {
+    //   right: 0.5em;
+    //   margin-left: -50%;
+    // }
+    // &:after {
+    //   left: 0.5em;
+    //   margin-right: -50%;
+    // }
+
   }
-}
 
-ul,
-ol {
-  margin: 0 0 1em 28%;
-}
+  p {
+    @include line;
 
-li {
-  margin-left: 1rem;
+    line-height: 1.2em;
 
-  &::marker{
-    content: '- ';
-    color: $accent-color;
-    font-weight: 600;
+        /** consent **/
+    &.consent {
+      margin-top: 4em;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 16px;
+      font-weight: 300;
+      color: $consent-color;
+    }
+
+    /** updated **/
+    &.updated {
+      // margin-top: 4em;
+      text-align: right;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 16px;
+      font-weight: 300;
+      color: $updated-color;
+    }
+
+    /** subtitle (for links) **/
+    &.subtitle {
+      font-style: italic;
+      font-weight: 300;
+      margin-top: -1.2em;
+      font-size: 16px;
+      font-weight: 300;
+      color: $subtitle-color;
+    }
   }
 
-  > ul,
-  > ol {
-    margin: 0;
+  h3,
+  h4 {
+    @include line;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
 
+  ul, ol {
+    @include line;
+
+    list-style-type: disc;
     > li {
-      margin-right: 0;
-
-      &::marker{
-        content: '- ';
-        color: $accent-color;
-        font-weight: 600;
-      }
+      margin-left: 1em;
     }
   }
 }
