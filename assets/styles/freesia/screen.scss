@@ -11,7 +11,7 @@ $subtitle-color: {{site.cv.subtitle-color | default: '$text-color'}};
 $surtitle-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $updated-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $consent-color: {{site.cv.surtitle-color | default: '$accent-color'}};
-$link-color: {{site.cv.surtitle-color | default: '#39f'}};
+$link-color: {{site.cv.link-color | default: '#39f'}};
 
 html {
   scroll-behavior: smooth;
