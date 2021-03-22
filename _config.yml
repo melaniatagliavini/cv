@@ -5,6 +5,8 @@ plugins:
 
 baseurl: /cv
 
+exclude: ['README.md', 'CONTRIBUTING.md', 'Gemfile.lock', 'Gemfile', 'License']
+
 toc:
   min_level: 2
   max_level: 5

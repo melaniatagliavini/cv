@@ -145,28 +145,6 @@ table {
     U+FEFF, U+FFFD;
 }
 
-/** Flags **/
-@mixin flag($country) {
-  .flag-#{$country} {
-    background-image: url("../../svg/#{$country}.svg");
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
-    width: (4 / 3) * 1em;
-    line-height: 1em;
-    &:before {
-      content: "\00a0";
-    }
-  }
-}
-
-@include flag(it);
-@include flag(en);
-@include flag(fr);
-@include flag(es);
-
 /** pdf **/
 .pdf-icon {
   background-image: url("../../svg/pdf-icon.svg");
@@ -196,6 +174,28 @@ table {
   }
 }
 
-.page-break{
+.page-break {
   page-break-before: always;
 }
+
+/** Flags **/
+@mixin flag($country) {
+  .flag-#{$country} {
+    background-image: url("../../svg/#{$country}.svg");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: (4 / 3) * 1em;
+    line-height: 1em;
+    &:before {
+      content: "\00a0";
+    }
+  }
+}
+
+@include flag(it);
+@include flag(en);
+@include flag(fr);
+@include flag(es);
