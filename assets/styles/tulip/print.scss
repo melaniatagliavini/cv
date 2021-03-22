@@ -1,15 +1,16 @@
 ---
 ---
 
-@import "main";
+@import 'main';
 
-$accent-color: {{site.cv.accent-color | default: '#bc412b'}};
+$accent-color: {{site.cv.accent-color | default: '#3f8ab5'}};
 $background-color: {{site.cv.background-color | default: '#fff'}};
 $text-color: {{site.cv.text-color | default: '#000'}};
 $subtitle-color: {{site.cv.subtitle-color | default: '$text-color'}};
 $surtitle-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $updated-color: {{site.cv.surtitle-color | default: '$accent-color'}};
 $consent-color: {{site.cv.surtitle-color | default: '$accent-color'}};
+$link-color: {{site.cv.link-color | default: '#39f'}};
 
 @page {
   size: A4;
@@ -51,8 +52,8 @@ ul {
 }
 
 #table-of-contents,
-#lang-selector,
-#topbar {
+#topbar,
+#sidebar {
   display: none;
 }
 
@@ -74,149 +75,133 @@ body {
 
 .photo-frame {
   margin-top: 0;
+  display: inline-block;
+  width: 25%;
+  margin: 0;
 }
 
 .photo {
-  width: 25%;
-  margin: 0;
-  display: inline-block;
+  width: 100%;
 }
 
 @mixin line {
-  position: relative;
-  margin: 0 0 1em 28%;
+  margin: 1em 10%;
+
+  &::before,
+  &::after,
+  &.subtitle {
+    display: block;
+    font-weight: 200;
+    text-align: left;
+    font-style: italic;
+  }
 
   /** surtitle **/
   &::before {
     content: attr(surtitle);
-    display: block;
     font-size: 14px;
-    font-weight: 200;
-    text-align: left;
-    font-style: italic;
     color: $surtitle-color;
   }
 
   /** subtitle **/
   &::after {
     content: attr(subtitle);
-    display: block;
     font-size: 16px;
-    font-weight: 200;
-    text-align: left;
-    font-style: italic;
     color: $subtitle-color;
-  }
-}
-
-p {
-  @include line;
-
-  line-height: 1.2em;
-
-  /** consent **/
-  &.consent {
-    margin-top: 4em;
-    font-style: italic;
-    font-weight: 200;
-    font-size: 16px;
-    font-weight: 200;
-    color: $consent-color;
-  }
-
-  /** updated **/
-  &.updated {
-    text-align: right;
-    font-style: italic;
-    font-weight: 200;
-    font-size: 16px;
-    font-weight: 200;
-    color: $updated-color;
   }
 
   /** subtitle (for links) **/
   &.subtitle {
-    font-style: italic;
-    font-weight: 200;
     margin-top: -1.2em;
+    padding-left: 1em;
     font-size: 16px;
-    font-weight: 200;
     color: $subtitle-color;
   }
 }
 
-h1 {
-  font-weight: 400;
-  text-align: right;
-  font-size: 3em;
-  line-height: 1;
+#markdown-content {
+  font-size: 1.2em;
 
-  display: inline-block;
-  width: 74%;
-}
+  p {
+    @include line;
+    line-height: 1.2em;
 
-h2 {
-  position: relative;
-  font-weight: 400;
-  font-size: 1.5em;
-  color: $accent-color;
-  margin-top: 3em;
-  text-align: right;
-  width: 25%;
-}
+    /** consent **/
+    &.consent {
+      margin-top: 4em;
+      font-style: italic;
+      font-weight: 200;
+      font-size: 16px;
+      font-weight: 200;
+      color: $consent-color;
+    }
 
-h3, h4 {
-  @include line;
-  font-size: 1.5em;
-  font-weight: 400;
-}
+    /** updated **/
+    &.updated {
+      text-align: right;
+      font-style: italic;
+      font-weight: 200;
+      font-size: 16px;
+      font-weight: 200;
+      color: $updated-color;
+    }
+  }
 
-section {
-  margin: 2em 0 2em 3em;
+  h1 {
+    @include line;
 
-  &::before {
-    content: attr(id);
-    text-transform: capitalize;
-    display: block;
-    font-weight: 200;
-    text-align: left;
-    margin: 0 0 1em 28%;
+    margin: 0;
+    font-weight: 400;
+    text-align: right;
+    font-size: 3em;
+    line-height: 1;
+
+    display: inline-block;
+    width: 74%;
+  }
+
+  h2 {
+    @include line;
+
+    font-weight: 400;
     font-size: 1.5em;
     color: $accent-color;
   }
-}
 
-ul,
-ol {
-  margin: 0 0 1em 28%;
-}
-
-li {
-  margin-left: 1rem;
-
-  &::before{
-    content: '- ';
-    color: $accent-color;
-    font-weight: 600;
+  h3,
+  h4 {
+    @include line;
+    font-size: 1.5em;
+    font-weight: 400;
   }
 
-  > ul,
-  > ol {
-    margin: 0;
+  section {
+    margin: 2em 0 2em 3em;
 
-    > li {
-      margin-right: 0;
-
-      &::before{
-        content: '- ';
-        color: $accent-color;
-        font-weight: 600;
-      }
+    &::before {
+      content: attr(id);
+      text-transform: capitalize;
+      display: block;
+      font-weight: 200;
+      text-align: left;
+      margin: 0 0 1em 28%;
+      font-size: 1.5em;
+      color: $accent-color;
     }
   }
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
+  li {
+    margin: 1em 12%;
+
+    &::marker {
+      content: "- ";
+      color: $accent-color;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
