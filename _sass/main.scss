@@ -15,6 +15,7 @@ p,
 blockquote,
 pre,
 a,
+button,
 abbr,
 acronym,
 address,
@@ -132,6 +133,11 @@ table {
   }
 }
 
+/** Page break **/
+.page-break {
+  page-break-before: always;
+}
+
 /** Fonts **/
 @font-face {
   font-family: "Abel";
@@ -145,28 +151,13 @@ table {
     U+FEFF, U+FFFD;
 }
 
-/** pdf **/
-.pdf-icon {
-  background-image: url("../../svg/pdf-icon.svg");
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  display: inline-block;
-  width: (4 / 3) * 1em;
-  line-height: 1em;
-  &:before {
-    content: "\00a0";
-  }
-}
-
 /** buttons **/
 .icon-btn {
-  background-color: inherit;
+  display: inline-block;
   border: none;
   color: #fff;
-  font-size: 1em;
   cursor: pointer;
+  margin: 0 0.5rem;
 
   &:hover {
     transform: scale(1.1);
@@ -174,21 +165,30 @@ table {
   }
 }
 
-.page-break {
-  page-break-before: always;
+/** pdf icon*/
+.pdf-icon {
+  background-image: url("../../svg/pdf-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  height: 2rem;
+  width: 2rem;
+
+  &:before {
+    content: "\00a0";
+  }
 }
 
-/** Flags **/
+/** flag icons**/
 @mixin flag($country) {
   .flag-#{$country} {
     background-image: url("../../svg/#{$country}.svg");
     background-size: contain;
-    background-position: 50%;
     background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
-    width: (4 / 3) * 1em;
-    line-height: 1em;
+    background-color: inherit;
+    height: 2rem;
+    width: 2rem;
+
     &:before {
       content: "\00a0";
     }
