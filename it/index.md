@@ -207,7 +207,7 @@ Iscritto alla facoltà di Ingegneria dell’informazione dell'università “La 
 
 {:surtitle="Ottobre 2018"}
 
-Corso Professionale P01218P048RM01 di “Programmatore Java” presso Eustema S.p.a. con programma
+Corso Professionale P01218P048RM01 di “Programmatore Java” presso Eustema S.p.a.
 
 {:surtitle="2009 – 2017"}
 
