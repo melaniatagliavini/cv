@@ -16,4 +16,5 @@ last-modified-at:
 
 cv:
   # accent-color: '#bc412b'
+  link-color: '#bc412b'
   languages: ['it', 'en']

@@ -174,9 +174,9 @@ table {
   height: 2rem;
   width: 2rem;
 
-  &:before {
-    content: "\00a0";
-  }
+  // &:before {
+  //   content: "\00a0";
+  // }
 }
 
 /** flag icons**/
@@ -189,9 +189,9 @@ table {
     height: 2rem;
     width: 2rem;
 
-    &:before {
-      content: "\00a0";
-    }
+    // &:before {
+    //   content: "\00a0";
+    // }
   }
 }
 
