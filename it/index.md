@@ -183,6 +183,10 @@ Principali tecnologie utilizzate:
 
 ## Certificazioni
 
+{:surtitle="Aprile 2021"}
+
+Oracle Certified Professional: Java SE 11 Developer
+
 {:surtitle="Dicembre 2020"}
 
 Oracle Certified Associate, Java SE 8 Programmer
