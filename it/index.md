@@ -185,15 +185,15 @@ Principali tecnologie utilizzate:
 
 {:surtitle="Aprile 2021"}
 
-Oracle Certified Professional: Java SE 11 Developer
+[Oracle Certified Professional: Java SE 11 Developer](https://catalog-education.oracle.com/pls/certview/sharebadge?id=AFFAEC24F6B86B7EE1412D608F1976C0DC2890816C216B1333EC515BF9C31BB7){:target='\_blank'}
 
 {:surtitle="Dicembre 2020"}
 
-Oracle Certified Associate, Java SE 8 Programmer
+[Oracle Certified Associate, Java SE 8 Programmer](https://www.youracclaim.com/badges/abbf87ca-f8d1-46ce-8931-31f6c16d15a3?source=linked_in_profile){:target='\_blank'}
 
 {:surtitle="Giugno 2020"}
 
-Scrum Fundamentals Certified
+[Scrum Fundamentals Certified](https://www.scrumstudy.com/certification/verify?type=SFC&number=789421){:target='\_blank'}
 
 {:.page-break}
 
