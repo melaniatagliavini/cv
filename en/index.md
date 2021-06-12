@@ -53,6 +53,21 @@ Relational databases design and mantainence (Oracle, MySql)
 
 ## Projects
 
+{:surtitle="Maggio 2021 – ad oggi"}
+
+### PSE
+
+Projects and resources management software.
+
+Main responsabilities:
+
+- front-end team leader;
+
+Main technologies involved:
+
+- Angular 11, NgRx, PrimeNG 
+  ^
+
 {:surtitle="Jenuary 2021 – today"}
 
 ### TELEFORUM For
@@ -101,7 +116,7 @@ Main technologies involved:
 - Gatsby, Lerna, Express
   ^
 
-{:surtitle="March 2019 – December 2020"}
+{:surtitle="March 2019 – December 2020" .page-break}
 
 ### For.te NSI
 
@@ -117,7 +132,7 @@ Main technologies involved:
 - Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
   ^
 
-{:surtitle="May 2019 – February 2020" .page-break}
+{:surtitle="May 2019 – February 2020"}
 
 ### Mappe conoscitive fornitori-amministrazioni
 
@@ -181,6 +196,8 @@ Main technologies involved:
 - Spring, Spring Boot, Spring Web, Spring Data e Spring MVC.
   ^
 
+{:.page-break}
+
 ## Certifications
 
 {:surtitle="April 2021"}
@@ -242,6 +259,8 @@ Problem solving and relational skills acquired in scouting experiences.
 Teamwork experience acquired playing basketball in Sora (FR) Under-17 team.
 
 Decisional skills acquired as Under-15 basketball referee.
+
+{:.page-break}
 
 ## Digital skills
 

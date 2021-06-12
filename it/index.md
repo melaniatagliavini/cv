@@ -53,6 +53,21 @@ Progettazione e gestione di database relazionali (Oracle, MySql)
 
 ## Progetti
 
+{:surtitle="Maggio 2021 – ad oggi"}
+
+### PSE
+
+Software interno per la gestione di progetti e risorse aziendali.
+
+Principali responsabilità:
+
+- team leader front-end;
+
+Principali tecnologie utilizzate:
+
+- Angular 11, NgRx, PrimeNG 
+  ^
+
 {:surtitle="Gennaio 2021 – ad oggi"}
 
 ### TELEFORUM For
@@ -101,7 +116,7 @@ Principali tecnologie utilizzate:
 - Gatsby, Lerna, Express
   ^
 
-{:surtitle="Marzo 2019 – Dicembre 2020"}
+{:surtitle="Marzo 2019 – Dicembre 2020" .page-break}
 
 ### For.te NSI
 
@@ -117,7 +132,7 @@ Principali tecnologie utilizzate:
 - Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
   ^
 
-{:surtitle="Maggio 2019 – Febbraio 2020" .page-break}
+{:surtitle="Maggio 2019 – Febbraio 2020"}
 
 ### Mappe conoscitive fornitori-amministrazioni
 
@@ -181,6 +196,8 @@ Principali tecnologie utilizzate:
 - Spring, Spring Boot, Spring Web, Spring Data e Spring MVC.
   ^
 
+{:.page-break}
+
 ## Certificazioni
 
 {:surtitle="Aprile 2021"}
@@ -194,8 +211,6 @@ Principali tecnologie utilizzate:
 {:surtitle="Giugno 2020"}
 
 [Scrum Fundamentals Certified](https://www.scrumstudy.com/certification/verify?type=SFC&number=789421){:target='\_blank'}
-
-{:.page-break}
 
 ## Titoli di studio
 
@@ -237,6 +252,8 @@ Inglese – B2/C1
 
 Francese – A1
 
+{:.page-break}
+
 ## Competenze comunicative
 
 Ottime competenze comunicative acquisite durante la formazione teatrale, vocale e di aiuto capo scout
@@ -254,8 +271,6 @@ Ottime competenze organizzative sviluppate come aiuto capo scout con gruppi di p
 Capacità decisionali affinate come arbitro ufficiale di pallacanestro Under-15.
 
 Propensione al lavoro di gruppo e alla risoluzione tempestiva dei problemi affinata durante la pluriennale esperienza di scout e come capo squadriglia (team di 7 ragazzi)
-
-{:.page-break}
 
 ## Competenze digitali
 
@@ -285,6 +300,8 @@ Esperienza nell’utilizzo di software di editing di immagini (GIMP), grafica (K
 Conoscenza base di software di editing audio (Audacity) e modellazione 3d (Rhinoceros 3D, blender).
 
 Conoscenza dei principi architetturali delle reti per la trasmissione dati, dei principali protocolli di comunicazione, della sicurezza perimetrale.
+
+{:.page-break}
 
 ## Patente di guida
 
