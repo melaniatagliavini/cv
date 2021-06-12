@@ -53,7 +53,7 @@ Relational databases design and mantainence (Oracle, MySql)
 
 ## Projects
 
-{:surtitle="Maggio 2021 – ad oggi"}
+{:surtitle="May 2021 – today"}
 
 ### PSE
 
