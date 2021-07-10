@@ -200,13 +200,17 @@ Principali tecnologie utilizzate:
 
 ## Certificazioni
 
+{:surtitle="Luglio 2021"}
+
+[VMware Spring Professional](https://www.credly.com/badges/c1351dbb-fa01-4706-ac7f-e27759bdf517){:target='\_blank'}
+
 {:surtitle="Aprile 2021"}
 
 [Oracle Certified Professional: Java SE 11 Developer](https://catalog-education.oracle.com/pls/certview/sharebadge?id=AFFAEC24F6B86B7EE1412D608F1976C0DC2890816C216B1333EC515BF9C31BB7){:target='\_blank'}
 
 {:surtitle="Dicembre 2020"}
 
-[Oracle Certified Associate, Java SE 8 Programmer](https://www.youracclaim.com/badges/abbf87ca-f8d1-46ce-8931-31f6c16d15a3?source=linked_in_profile){:target='\_blank'}
+[Oracle Certified Associate, Java SE 8 Programmer](https://www.credly.com/badges/abbf87ca-f8d1-46ce-8931-31f6c16d15a3){:target='\_blank'}
 
 {:surtitle="Giugno 2020"}
 
