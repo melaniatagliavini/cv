@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="{{page.lang}}">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="{{site.baseurl}}/assets/js/scroll-spy.js"></script>
-    <link href="{{site.baseurl}}/assets/styles/tulip/screen.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="{{site.baseurl}}/assets/styles/tulip/print.css" type="text/css" rel="stylesheet" media="print">
+    <link
+      href="{{site.baseurl}}/assets/styles/tulip/screen.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      href="{{site.baseurl}}/assets/styles/tulip/print.css"
+      type="text/css"
+      rel="stylesheet"
+      media="print"
+    />
     <title>Curriculum Vitae {{page.title}}</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="topbar">
-        <div class="btn-group">
-            <div>
-                {% include lang_buttons.html languages=site.cv.languages %}
-            </div>
-            {% include pdf_button.html page=page %}
-        </div>
+      <div class="btn-group">
+        <div>{% include lang_buttons.html languages=site.cv.languages %}</div>
+        {% include pdf_button.html page=page %}
+      </div>
     </header>
 
     <div id="sidebar">
-        <div class="sidebar-frame">
-            <div class="photo-frame">
-                <img class="photo" src="{{site.baseurl}}/assets/img/photo.jpg" alt="photo" width="80%">
-            </div>
-            <div class="info-block">
-                {% contentblock info %}
-            </div>
+      <div class="sidebar-frame">
+        <div class="photo-frame">
+          <img
+            class="photo"
+            src="{{site.baseurl}}/assets/img/photo.jpg"
+            alt="photo"
+            width="80%"
+          />
         </div>
+        <div class="info-block">{% contentblock info %}</div>
+      </div>
     </div>
 
     <main id="markdown-content">
-        <div class="photo-frame">
-            <img class="photo" src="{{site.baseurl}}/assets/img/photo.jpg" alt="photo" width="50%">
-        </div>
-        <h1>{{page.title}}</h1>
-        <div class="info-block">
-            {% contentblock info %}
-        </div>
-        {{ content }}
+      <div class="photo-frame">
+        <img
+          class="photo"
+          src="{{site.baseurl}}/assets/img/photo.jpg"
+          alt="photo"
+          width="50%"
+        />
+      </div>
+      <h1>{{page.title}}</h1>
+      <div class="info-block">{% contentblock info %}</div>
+      {{ content }}
+
+      <div class="made-with">
+        made with
+        <a href="https://github.com/bibizio/cv" target="_blank">bibizio/cv</a>
+      </div>
     </main>
 
     <nav id="table-of-contents">
-        <div class="btn-group">
-            {% include lang_buttons.html languages=site.cv.languages %}
-            {% include pdf_button.html page=page %}
-        </div>
-        {{ content | toc_only }}
+      <div class="btn-group">
+        {% include lang_buttons.html languages=site.cv.languages %} {% include
+        pdf_button.html page=page %}
+      </div>
+      {{ content | toc_only }}
     </nav>
-</body>
 
+    <!-- <div></div>
+    <footer id="footer">made with <a href="https://github.com/bibizio/cv">bibizio/cv</a></footer> -->
+  </body>
 </html>

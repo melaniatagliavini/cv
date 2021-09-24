@@ -12,7 +12,7 @@ static_pdf: true
 Via Appia Nuova 566, Roma, Italy
 
 {:surtitle="Telephone"}
-+39 3464066954
+[+39 3464066954](tel:+393464066954)
 
 {:surtitle="e-mail"}
 <fabrizio.giovinazzi@gmail.com>
