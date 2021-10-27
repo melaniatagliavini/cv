@@ -200,6 +200,10 @@ Main technologies involved:
 
 ## Certifications
 
+{:surtitle="October 2021"}
+
+[GitLab Certified Associate](https://gitlab.badgr.com/public/assertions/gxAz071nR06hjySg1_2wlA){:target='\_blank'}
+
 {:surtitle="July 2021"}
 
 [VMware Spring Professional](https://www.credly.com/badges/c1351dbb-fa01-4706-ac7f-e27759bdf517){:target='\_blank'}
