@@ -200,6 +200,18 @@ Principali tecnologie utilizzate:
 
 ## Certificazioni
 
+{:surtitle="Febbraio 2022"}
+
+[Red Hat Certified Specialist in Event-Driven Application Development](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ3X24IDK3QSZJBTVRRM7YVWCBA4LHOTDBFCJN4RUVIZUN2NSCACUSQ=){:target='\_blank'}
+
+{:surtitle="Gennaio 2022"}
+
+[Red Hat Certified Cloud-native Developer](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ33DOYCYC37B2IAWB4Y65IONGYDQ4U5NQYTCNA62RUWOCM34WWBUYQ=){:target='\_blank'}
+
+{:surtitle="Gennaio 2022"}
+
+[Red Hat Certified Enterprise Application Developer](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ3TDKGZ4OQQD6K2ZRZ7NYKH5QQYM4U5NQYTCNA62RUWOCM34WWBUYQ=){:target='\_blank'}
+
 {:surtitle="Ottobre 2021"}
 
 [GitLab Certified Associate](https://gitlab.badgr.com/public/assertions/gxAz071nR06hjySg1_2wlA){:target='\_blank'}
