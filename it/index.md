@@ -25,7 +25,14 @@ Italiana
 
 ## Esperienza Professionale
 
-{:surtitle="2018 – ad oggi"}
+{:surtitle="Settembre 2021 – ad oggi"}
+
+### Technology Architect Delivery Specialist
+
+{:.subtitle}
+[Accenture](https://www.accenture.com/){:target='\_blank'}, Roma
+
+{:surtitle="novembre 2018 – Agosto 2021"}
 
 ### Software Developer
 
@@ -34,12 +41,16 @@ Italiana
 
 Programmazione orientata agli oggetti e funzionale, principalmente in Java e Javascript/Typescript, per la realizzazione di Web Applications.
 
-Principali librerie e framework utilizzati:
+Principali progetti:
 
-- Spring, JavaEE, Angular, React, Express, Gatsby, JPA/Hibernate.
-  ^
+- TELEFORUM For - Eustema S.p.a (Java 11, Spring, Angular 7, Jboss, Oracle DBMS)
+- Portale Istituzionale del Dipartimento della Protezione Civile (Gatsby, React, Lerna, Express)
+- For.te NSI (JavaEE, Angular 8, Angular Material, Jboss, MySql)
+- Mappe conoscitive fornitori/amministrazioni - CONSIP (Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS)
+- Cruscotto FSE - SOGEI (Java 11, JavaScript, d3.js, Tomcat)
+- Conti Correnti Valute Tesoro - MEF (Spring, Spring Boot, Spring Batch, Spring Data, Spring MVC)
 
-Progettazione e gestione di database relazionali (Oracle, MySql)
+{:.page-break}
 
 {:surtitle="2017 – 2018" subtitle='“Scuola di Musica di Ferentino”, Ferentino (FR)'}
 
@@ -49,154 +60,15 @@ Progettazione e gestione di database relazionali (Oracle, MySql)
 
 ### Cameriere
 
-{:.page-break}
-
 ## Progetti
 
-{:surtitle="Maggio 2021 – ad oggi"}
+### [svelte-dialogs](https://github.com/bibizio/svelte-dialogs){:target='\_blank'}
 
-### PSE
+Libreria UI per la creazione di finestre modali configurabili in [Svelte](https://svelte.dev/){:target='\_blank'}.
 
-Software interno per la gestione di progetti e risorse aziendali.
+### [cv](https://github.com/bibizio/cv){:target='\_blank'}
 
-Principali responsabilità:
-
-- team leader front-end;
-
-Principali tecnologie utilizzate:
-
-- Angular 11, NgRx, PrimeNG 
-  ^
-
-{:surtitle="Gennaio 2021 – ad oggi"}
-
-### TELEFORUM For
-
-Software legale di supporto al giurista d’impresa, multicliente.
-
-Principali responsabilità:
-
-- realizzazione di servizi applicativi;
-- sviluppo del front-end applicativo.
-
-Principali tecnologie utilizzate:
-
-- Java 11, Spring, Angular 7, Jboss, Oracle DBMS
-  ^
-
-{:surtitle="Novembre 2020 – Febbraio 2021"}
-
-### Call for innovation
-
-Progetto di ricerca interno volto all’applicazione di Continuous Intelligence e Machine Learning in prodotti aziendali.
-
-Principali responsabilità:
-
-- realizzazione completa di una poc composta da applicativo e dashboard.
-  ^
-
-Principali tecnologie utilizzate:
-
-- Python 3, Flask, numPy, pandas, scikit-learn, Angular 11.
-  ^
-
-{:surtitle="Luglio 2020 – Ottobre 2020"}
-
-### Dipartimento della Protezione Civile – Portale Istituzionale
-
-Portale istituzionale della protezione civile.
-
-Principali responsabilità:
-
-- realizzazione di servizi di gestione del portale;
-- progettazione e realizzazione iniziale del front-end.
-
-Principali tecnologie utilizzate:
-
-- Gatsby, Lerna, Express
-  ^
-
-{:surtitle="Marzo 2019 – Dicembre 2020" .page-break}
-
-### For.te NSI
-
-Web application per la gestione degli avvisi e dei progetti formativi commissionata dall’omonimo fondo.
-
-Principali responsabilità:
-
-- realizzazione di servizi applicativi;
-- sviluppo del front-end applicativo.
-
-Principali tecnologie utilizzate:
-
-- Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
-  ^
-
-{:surtitle="Maggio 2019 – Febbraio 2020"}
-
-### Mappe conoscitive fornitori-amministrazioni
-
-Mappe conoscitive del Programma di Razionalizzazione degli acquisti della PA per CONSIP.
-
-Principali responsabilità:
-
-- realizzazione mappe conoscitive aggiuntive del portale
-  ^
-
-Principali tecnologie utilizzate:
-
-- Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS
-  ^
-
-{:surtitle="Aprile - Maggio 2019"}
-
-### Cruscotto FSE
-
-Realizzazione di un cruscotto informativo sul Fascicolo Sanitario Elettronico per SOGEI.
-
-Principali responsabilità:
-
-- rifacimento del progetto su basi pre-esistenti
-  ^
-
-Principali tecnologie utilizzate:
-
-- Java 11, JavaScript , d3.js, Tomcat
-  ^
-
-{:surtitle="Gennaio – Marzo 2019"}
-
-### For.te
-
-Manutenzione della piattaforma esistente dell’omonimo fondo.
-
-Principali responsabilità:
-
-- gestione delle segnalazioni relative alla piattaforma.
-  ^
-
-Principali tecnologie utilizzate:
-
-- MySQL.
-  ^
-
-{:surtitle="Novembre – Dicembre 2018"}
-
-### Conti Correnti Valute Tesoro
-
-Sviluppo della piattaforma Conti Correnti Valute Tesoro per il MEF
-
-Principali responsabilità:
-
-- formazione on-the-job affiancando il gruppo di sviluppo della piattaforma
-  ^
-
-Principali tecnologie utilizzate:
-
-- Spring, Spring Boot, Spring Web, Spring Data e Spring MVC.
-  ^
-
-{:.page-break}
+Repository Github per scrivere in markdown e pubblicare su Github Pages il proprio curriculum vitae.
 
 ## Certificazioni
 
@@ -238,6 +110,8 @@ Principali tecnologie utilizzate:
 
 Maturità Scientifica
 
+{:.page-break}
+
 ## Istruzione e formazione
 
 {:surtitle="2020 – oggi"}
@@ -272,8 +146,6 @@ Inglese – B2/C1
 
 Francese – A1
 
-{:.page-break}
-
 ## Competenze comunicative
 
 Ottime competenze comunicative acquisite durante la formazione teatrale, vocale e di aiuto capo scout
@@ -292,6 +164,8 @@ Capacità decisionali affinate come arbitro ufficiale di pallacanestro Under-15.
 
 Propensione al lavoro di gruppo e alla risoluzione tempestiva dei problemi affinata durante la pluriennale esperienza di scout e come capo squadriglia (team di 7 ragazzi)
 
+{:.page-break}
+
 ## Competenze digitali
 
 Padronanza dei principi della programmazione ad oggetti e funzionale
@@ -300,12 +174,14 @@ Esperienza in ambito lavorativo di progettazione, realizzazione e gestione di si
 
 - Java (Java EE, Spring)
 - JavaScript/TypeScript (Angular, React, Gatsby, Express, Koa)
-- Oracle DBMS, MySql
+- Oracle DBMS, MySql, MongoDB
 - Tomcat, WebLogic, JBoss
+- Kafka
+- Openshift
 
 Utilizzo e implementazione base di un server GraphQL
 
-Conoscenza del linguaggio Python ed esperienza iniziale nell’ambito della programmazione scientifica attraverso le librerie numPy, pandas, scikit-learn e l’utilizzo di Jupyter Notebooks
+Conoscenza del linguaggio Python ed esperienza lavorativa iniziale nell’ambito della programmazione scientifica attraverso le librerie numPy, pandas, scikit-learn e l’utilizzo di Jupyter Notebooks
 
 Conoscenza di base dei linguaggi Scala e Kotlin
 
@@ -320,8 +196,6 @@ Esperienza nell’utilizzo di software di editing di immagini (GIMP), grafica (K
 Conoscenza base di software di editing audio (Audacity) e modellazione 3d (Rhinoceros 3D, blender).
 
 Conoscenza dei principi architetturali delle reti per la trasmissione dati, dei principali protocolli di comunicazione, della sicurezza perimetrale.
-
-{:.page-break}
 
 ## Patente di guida
 

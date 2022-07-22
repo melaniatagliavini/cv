@@ -25,21 +25,32 @@ Italian
 
 ## Professional Experiences
 
-{:surtitle="2018 – today"}
+{:surtitle="September 2021 – today"}
+
+### Technology Architect Delivery Specialist
+
+{:.subtitle}
+[Accenture](https://www.accenture.com/){:target='\_blank'}, Rome
+
+{:surtitle="November 2018 – August 2021"}
 
 ### Software Developer
 
 {:.subtitle}
-[Eustema S.p.a.](http://www.eustema.it){:target='\_blank'}, Roma
+[Eustema S.p.a.](http://www.eustema.it){:target='\_blank'}, Rome
 
 Functional and Object Oriented Programming, using Java and Javascript/Typescript mostly, for Web Applications.
 
-Main libraries and frameworks:
+Main projects:
 
-- Spring, JavaEE, Angular, React, Express, Gatsby, JPA/Hibernate.
-  ^
+- TELEFORUM For - Eustema S.p.a (Java 11, Spring, Angular 7, Jboss, Oracle DBMS)
+- Portale Istituzionale del Dipartimento della Protezione Civile (Gatsby, React, Lerna, Express)
+- For.te NSI (JavaEE, Angular 8, Angular Material, Jboss, MySql)
+- Mappe conoscitive fornitori/amministrazioni - CONSIP (Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS)
+- Cruscotto FSE - SOGEI (Java 11, JavaScript, d3.js, Tomcat)
+- Conti Correnti Valute Tesoro - MEF (Spring, Spring Boot, Spring Batch, Spring Data, Spring MVC)
 
-Relational databases design and mantainence (Oracle, MySql)
+{:.page-break}
 
 {:surtitle="2017 – 2018" subtitle='“Scuola di Musica di Ferentino”, Ferentino (FR)'}
 
@@ -49,154 +60,15 @@ Relational databases design and mantainence (Oracle, MySql)
 
 ### Waiter
 
-{:.page-break}
-
 ## Projects
 
-{:surtitle="May 2021 – today"}
+### [svelte-dialogs](https://github.com/bibizio/svelte-dialogs){:target='\_blank'}
 
-### PSE
+UI library written in svelte for creating configurable modals in [Svelte](https://svelte.dev/){:target='\_blank'}.
 
-Projects and resources management software.
+### [cv](https://github.com/bibizio/cv){:target='\_blank'}
 
-Main responsabilities:
-
-- front-end team leader;
-
-Main technologies involved:
-
-- Angular 11, NgRx, PrimeNG 
-  ^
-
-{:surtitle="Jenuary 2021 – today"}
-
-### TELEFORUM For
-
-Legal Tech software aimed to help lawyers in enterprise companies, multitenant.
-
-Main responsabilities:
-
-- implementing application services;
-- implementing application front-end;
-
-Main technologies involved:
-
-- Java 11, Spring, Angular 7, Jboss, Oracle DBMS
-  ^
-
-{:surtitle="November 2020 – February 2021"}
-
-### Call for innovation
-
-Research project aimed at the integration of Continuous Intelligence and Machine Learning in company's prosucts.
-
-Main responsabilities:
-
-- designing and implementing a POC.
-  ^
-
-Main technologies involved:
-
-- Python 3, Flask, numPy, pandas, scikit-learn, Angular 11.
-  ^
-
-{:surtitle="July 2020 – October 2020"}
-
-### Dipartimento della Protezione Civile – Portale Istituzionale
-
-Department of Civil Protection Web Portal
-
-Main responsabilities:
-
-- implementing portal management services;
-- designing and early implementation of the portal front-end;
-
-Main technologies involved:
-
-- Gatsby, Lerna, Express
-  ^
-
-{:surtitle="March 2019 – December 2020" .page-break}
-
-### For.te NSI
-
-Web application for the management of training plans of the terziary job training fund For.te.
-
-Main responsabilities:
-
-- implementing application services;
-- implementing application front-end;
-
-Main technologies involved:
-
-- Java 11, framework aziendale EAEAM (Java EE), Angular 8, Angular Material, Jboss, MySql
-  ^
-
-{:surtitle="May 2019 – February 2020"}
-
-### Mappe conoscitive fornitori-amministrazioni
-
-Informational maps for CONSIP.
-
-Main responsabilities:
-
-- implementing portal additional maps;
-  ^
-
-Main technologies involved:
-
-- Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS
-  ^
-
-{:surtitle="April - May 2019"}
-
-### Cruscotto FSE
-
-Informational dashboard for SOGEI.
-
-Main responsabilities:
-
-- makeover of the portal
-  ^
-
-Main technologies involved:
-
-- Java 11, JavaScript , d3.js, Tomcat
-  ^
-
-{:surtitle="Jenuary – March 2019"}
-
-### For.te
-
-Previous web application mantainance for For.te.
-
-Main responsabilities:
-
-- issues handling.
-  ^
-
-Main technologies involved:
-
-- MySQL.
-  ^
-
-{:surtitle="November – December 2018"}
-
-### Conti Correnti Valute Tesoro
-
-Web platform for the Ministry of Economy and Finance
-
-Main responsabilities:
-
-- training on-the-job
-  ^
-
-Main technologies involved:
-
-- Spring, Spring Boot, Spring Web, Spring Data e Spring MVC.
-  ^
-
-{:.page-break}
+Github repository for writing in markdown and publish on Github Pages your curriculum vitae.
 
 ## Certifications
 
@@ -231,6 +103,8 @@ Main technologies involved:
 {:surtitle="June 2020"}
 
 [Scrum Fundamentals Certified](https://www.scrumstudy.com/certification/verify?type=SFC&number=789421){:target='\_blank'}
+
+{:.page-break}
 
 ## Education and qualifications
 
@@ -290,10 +164,12 @@ Daily working experience designing, implementing and managing projects in:
 
 - Java (Java EE, Spring)
 - JavaScript/TypeScript (Angular, React, Gatsby, Express, Koa)
-- Oracle DBMS, MySql
+- Oracle DBMS, MySql, MongoDB
 - Tomcat, WebLogic, JBoss
+- Kafka
+- Openshift
 
-Experience in Python and basic experience in scientific programming using numPy, pandas, scikit-learn libraries and Jupyter Notebooks.
+Working experience in Python and basic experience in scientific programming using numPy, pandas, scikit-learn libraries and Jupyter Notebooks.
 
 Basic experience implementing a GraphQL server.
 
